@@ -1,0 +1,53 @@
+.header, .main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+}
+
+.title, .subtitle {
+  font-weight: unset;
+  margin: unset;
+}
+
+.main {
+  padding: 12px 0;
+}
+
+.tasksCategories {
+  margin-bottom: 36px;
+}
+
+.tasksCatList {
+  display: flex;
+  overflow-x: scroll;
+  list-style: none;
+  padding: unset;
+  gap: 12px;
+  position: relative;
+  scroll-snap-type: x mandatory;
+}
+
+.taskCatItem {
+  width: 150px;
+  height: 175px;
+  background-color: #363C48;
+  border-radius: 12px;
+  display: inline-block;
+}
+
+.tasks .tasksList {
+  list-style: none;
+  padding: unset;
+}
+
+.tasks .tasksList .taskItem {
+  height: 50px;
+  background-color: #363C48;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
