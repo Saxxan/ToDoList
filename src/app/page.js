@@ -1,45 +1,113 @@
-import styles from "./page.module.css";
+// Styles
+import "./styles/globals.scss";
+
+// Components
+import TaskCatItem from "./components/TaskCatItem";
+
+const taskBattery = [
+  {
+    id: 1,
+    taskCategory: "Home",
+    tasks: [
+      {
+        task: "Poner lavadora",
+        completed: false,
+      },
+      {
+        task: "Poner lavadora",
+        completed: false,
+      },
+      {
+        task: "Poner lavadora",
+        completed: false,
+      },
+      {
+        task: "Poner lavadora",
+        completed: false,
+      },
+      {
+        task: "Poner lavadora",
+        completed: false,
+      },
+    ],
+  },
+  {
+    id: 2,
+    taskCategory: "Proyecto",
+    tasks: [
+      {
+        task: "Crear componente",
+        completed: false,
+      },
+      {
+        task: "Crear componente",
+        completed: false,
+      },
+      {
+        task: "Crear componente",
+        completed: false,
+      },
+      {
+        task: "Crear componente",
+        completed: false,
+      },
+      {
+        task: "Crear componente",
+        completed: false,
+      },
+    ],
+  },
+  {
+    id: 3,
+    taskCategory: "Deportes",
+    tasks: [
+      {
+        task: "Comprar mancuernas",
+        completed: false,
+      },
+      {
+        task: "Comprar mancuernas",
+        completed: false,
+      },
+      {
+        task: "Comprar mancuernas",
+        completed: false,
+      },
+      {
+        task: "Comprar mancuernas",
+        completed: false,
+      },
+      {
+        task: "Comprar mancuernas",
+        completed: false,
+      },
+    ],
+  },
+];
 
 export default function Home() {
   return (
-    <>
-      <header className={styles.header}>
-        <h1 className={styles.title}>Welcome Salva</h1>
-      </header>
-      <main className={styles.main}>
-        <section className={styles.tasksCategories}>
-          <h2 className={styles.subtitle}>Task categories</h2>
-          <ul className={styles.tasksCatList}>
-            <li className={styles.taskCatItem}>
-              <h3 className={styles.taskCatTitle}></h3>
-            </li>
-            <li className={styles.taskCatItem}>
-              <h3 className={styles.taskCatTitle}></h3>
-            </li>
-            <li className={styles.taskCatItem}>
-              <h3 className={styles.taskCatTitle}></h3>
-            </li>
-            <li className={styles.taskCatItem}>
-              <h3 className={styles.taskCatTitle}></h3>
-            </li>
-            <li className={styles.taskCatItem}>
-              <h3 className={styles.taskCatTitle}></h3>
-            </li>
-          </ul>
-        </section>
+    <main className="main">
+      <section className="tasksCategories">
+        <h2 className="titleH2">Task categories</h2>
+        <ul className="tasksCatList">
+          {taskBattery.map((item) => (
+            <TaskCatItem taskCategory={item} key={item.id} />
+          ))}
+        </ul>
+      </section>
 
-        <section className={styles.tasks}>
-          <h2 className={styles.subtitle}>Tasks</h2>
-          <ul className={styles.tasksList}>
-            <li className={styles.taskItem}></li>
-            <li className={styles.taskItem}></li>
-            <li className={styles.taskItem}></li>
-            <li className={styles.taskItem}></li>
-            <li className={styles.taskItem}></li>
-            <li className={styles.taskItem}></li>
-          </ul>
-        </section>
-      </main>
-    </>
+      <section className="tasks">
+        <h2 className="titleH2">Tasks</h2>
+        <ul className="tasksList">
+          <li className="taskItem"></li>
+          <li className="taskItem"></li>
+          <li className="taskItem"></li>
+          <li className="taskItem"></li>
+          <li className="taskItem"></li>
+          <li className="taskItem"></li>
+        </ul>
+      </section>
+    </main>
   );
 }
