@@ -1,0 +1,95 @@
+[
+    {
+        "id": 1,
+        "taskCategoryTitle": "Home",
+        "tasks": [
+            {
+                "id": 1,
+                "taskName": "Poner lavadora",
+                "completed": false
+            },
+            {
+                "id": 2,
+                "taskName": "Poner lavadora",
+                "completed": false
+            },
+            {
+                "id": 3,
+                "taskName": "Poner lavadora",
+                "completed": false
+            },
+            {
+                "id": 4,
+                "taskName": "Poner lavadora",
+                "completed": false
+            },
+            {
+                "id": 5,
+                "taskName": "Poner lavadora",
+                "completed": false
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "taskCategoryTitle": "Proyecto",
+        "tasks": [
+            {
+                "id": 1,
+                "taskName": "Crear componente",
+                "completed": false
+            },
+            {
+                "id": 2,
+                "taskName": "Crear componente",
+                "completed": false
+            },
+            {
+                "id": 3,
+                "taskName": "Crear componente",
+                "completed": false
+            },
+            {
+                "id": 4,
+                "taskName": "Crear componente",
+                "completed": false
+            },
+            {
+                "id": 5,
+                "taskName": "Crear componente",
+                "completed": false
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "taskCategoryTitle": "Deportes",
+        "tasks": [
+            {
+                "id": 1,
+                "taskName": "Comprar mancuernas",
+                "completed": false
+            },
+            {
+                "id": 2,
+                "taskName": "Comprar mancuernas",
+                "completed": false
+            },
+            {
+                "id": 3,
+                "taskName": "Comprar mancuernas",
+                "completed": false
+            },
+            {
+                "id": 4,
+                "taskName": "Comprar mancuernas",
+                "completed": false
+            },
+            {
+                "id": 5,
+                "taskName": "Comprar mancuernas",
+                "completed": false
+            }
+        ]
+    }
+]
