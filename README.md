@@ -1,4 +1,4 @@
-#ToDo List App con NextJS
+# ToDo List App con NextJS
 
 Esta es una aplicación sencilla de gestión de tareas mediante el uso de catergorías o colecciones. Esta aplicación es una interfaz UI que no hace uso de un servidor o localStore para almacenar las tareas.
 
